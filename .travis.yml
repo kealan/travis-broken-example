@@ -1,18 +1,26 @@
-sudo: false
 language: node_js
 
-node_js: 
+node_js:
   - "node"
 
-before_install:
-  - npm update
+sudo: required
+dist: trusty
 
-install:
-  - npm install
+group: edge
+
+branches:
+  except:
+    - release
+
+before_script:
+    - npm install chai
+    - npm install -g mocha
+    - npm install -g coveralls
+    - npm install -g istanbul
+    - npm install -g nyc
 
 script:
   - npm run coverage
 
 after_success:
   - npm run report
-
