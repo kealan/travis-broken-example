@@ -30,14 +30,10 @@
   },
   "homepage": "https://github.com/apache/incubator-milagro-crypto-js#readme",
   "devDependencies": {
-      "chai": "latest",
+    "chai": "latest",
     "coveralls": "latest",
     "eslint": "latest",
-    "istanbul": "latest",
-    "mocha": "latest",
-    "mocha-text-cov": "latest",
-    "nyc": "latest",
-    "mocha-parallel-tests": "latest"
+    "nyc": "latest"
   },
   "nyc": {
     "include": [
