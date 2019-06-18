@@ -33,7 +33,11 @@
     "chai": "latest",
     "coveralls": "latest",
     "eslint": "latest",
-    "nyc": "latest"
+    "istanbul": "latest",
+    "mocha": "latest",
+    "mocha-text-cov": "latest",
+    "nyc": "latest",
+    "mocha-parallel-tests": "latest"
   },
   "nyc": {
     "include": [
